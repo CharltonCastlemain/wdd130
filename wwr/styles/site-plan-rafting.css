@@ -32,6 +32,7 @@ Fonts are separated by a & */
 
 #background {
   height: 725px;
+  background-color: #E1E6E1;
 }
 #content {
   max-width: 1600px;
@@ -67,7 +68,9 @@ header {
   padding: 1em;
   text-align: center;
   color: var(--headline-color-on-color);
+  
   background-color: var(--paragraph-background-color);
+
 }
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
@@ -175,6 +178,9 @@ nav a:hover {
 nav a {
   text-align: center;
 }
+nav a:hover {
+  background-color: #2978A0;
+}
 #hero-msg h1 {
   text-align: center;
 }
@@ -186,4 +192,16 @@ nav a {
 }
 main section {
   text-align: center;
+}
+header {
+  background-color: #697A21;
+}
+.book, .join {
+  background-color: #2978A0;
+}
+.msg {
+  background-color: #DA7635;
+}
+footer {
+  background-color: #697A21;
 }
