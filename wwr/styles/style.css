@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=EB+Garamond&family=Playfair+Display&family=Slabo+27px&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
+}
 #content {
     max-width: 1600px;
     margin: 0 auto;
+    font-size: 22px;
 }
 #background {
     height: 725px;
@@ -10,6 +19,8 @@ nav a {
     text-align: center;
     color: #E1E6E1;
     text-decoration: none;
+    font-family: "Cormorant Garamond", Helvetica, sans-serif;
+    padding: 35px;
 }
 nav a:hover {
     background-color: #DA7635;
@@ -34,35 +45,60 @@ header {
     background-color: #697A21;
     color: #E1E6E1;
     text-decoration: none;
+    font-family: "Cormorant Garamond", Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .join {
     background-color: #2978A0;
     color: #E1E6E1;
     text-decoration: none;
+    font-family: "Cormorant Garamond", Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .msg {
     background-color: #DA7635;
+    line-height: 1.5em;
+    padding: 35px;
 }
 footer {
     background-color: #697A21;
+    font-family: "Cormorant Garamond", Helvetica, sans-serif;
+    
 }
 .home-title {
     color: #DA7635;
+    font-family: "EB Garamond", Slabo, "Times New Roman";
+    font-size: 2em;
+    margin-top: 10px;
 }
 h4 {
     color: #697A21;
+    font-family: "Cormorant Garamond", Helvetica, sans-serif;
 }
 .book:hover, .join:hover {
     color: #DA7635;
 }
 .msg h2 {
     color: #2978A0;
+    font-family: "EB Garamond", Slabo, "Times New Roman";
+
 }
 .msg p {
     color: #E1E6E1;
+    font-family: "Cormorant Garamond", Helvetica, sans-serif;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 footer {
     color: #E1E6E1;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a {
     color: #DA7635;
@@ -76,10 +112,30 @@ footer a:hover {
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 footer p {
     font-size: 1.2em;
 }
 footer p a:hover {
     text-decoration: underline;
+}
+.home-grid {
+    font-family: "Cormorant Garamond", Helvetica, sans-serif;
+
+}
+#logo_link {
+    padding-top: 5px;
+}
+footer .social img {
+    padding-top: 15px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img{
+    border: 10px solid #DA7635;
+}
+main section img{
+    box-sizing: border-box;
 }
