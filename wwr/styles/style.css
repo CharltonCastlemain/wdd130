@@ -1,141 +1,250 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=EB+Garamond&family=Playfair+Display&family=Slabo+27px&display=swap');
-body {
-    margin: 0;
-    padding: 0;
-}
-h2 {
-    margin: 0;
-}
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
-    font-size: 22px;
-}
-#background {
-    height: 725px;
-    background-color: #E1E6E1;
+    font-family: "Cormorant Garamond";
 }
 nav a {
     text-align: center;
     color: #E1E6E1;
     text-decoration: none;
-    font-family: "Cormorant Garamond", Helvetica, sans-serif;
+    font-family: "Cormorant Garamond";
     padding: 35px;
 }
-nav a:hover {
-    background-color: #DA7635;
-    color: #697A21;
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    text-align: center;
 }
 #hero-msg h1 {
-    text-align: center;
+    font-family: "EB Garamond";
 }
-#hero-msg h4 {
-    text-align: center;
+#hero-msg h4{
+    color: white;
+    font-family: "Cormorant Garamond";
 }
 .button-box {
     text-align: center;
+    font-family: "Cormorant Garamond";
 }
 main section {
     text-align: center;
 }
-header {
+#background {
+    height: 725px;
     background-color: #697A21;
+    grid-column: 1/11;
+    grid-row: 4/9;
 }
-.book {
-    background-color: #697A21;
-    color: #E1E6E1;
+body{
+    background-color: #ABA782;
+    font-size: 22px;
+    font-family: "Cormorant Garamond";
+    margin: 0;
+    padding: 0;
+}
+
+nav a:hover{
+    background-color: #DA7635;
+    color: #2978A0;
+}
+.book, .join {
     text-decoration: none;
-    font-family: "Cormorant Garamond", Helvetica, sans-serif;
+    background-color: #DA7635;
     font-size: 18px;
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
 }
 .join {
-    background-color: #2978A0;
+    background-color: #E1E6E1;
+}
+.book:hover, .join:hover {
+    background-color: #697A21;
     color: #E1E6E1;
-    text-decoration: none;
-    font-family: "Cormorant Garamond", Helvetica, sans-serif;
-    font-size: 18px;
-    padding: 15px 30px;
-    margin-top: 50px;
-    border-radius: 5px;
 }
 .msg {
     background-color: #DA7635;
     line-height: 1.5em;
     padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px black;
 }
-footer {
-    background-color: #697A21;
-    font-family: "Cormorant Garamond", Helvetica, sans-serif;
-    
-}
-.home-title {
-    color: #DA7635;
-    font-family: "EB Garamond", Slabo, "Times New Roman";
-    font-size: 2em;
-    margin-top: 10px;
-}
-h4 {
-    color: #697A21;
-    font-family: "Cormorant Garamond", Helvetica, sans-serif;
-}
-.book:hover, .join:hover {
-    color: #DA7635;
-}
-.msg h2 {
-    color: #2978A0;
-    font-family: "EB Garamond", Slabo, "Times New Roman";
-
-}
-.msg p {
+footer a {
     color: #E1E6E1;
-    font-family: "Cormorant Garamond", Helvetica, sans-serif;
-    font-size: .8em;
-    padding-bottom: 15px;
+    text-decoration: none;
 }
-footer {
+footer a:hover{
+    color: #2978A0;
+}
+footer{
+    background-color: #697A21;
     color: #E1E6E1;
     padding: 25px 50px;
     margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-footer a {
-    color: #DA7635;
+header{
+    background-color: #697A21;
+    display: grid;
+    grid-template-columns: 150px auto;
+    opacity: .75;
+    
+}
+footer p{
+    font-size: 1.2em;
+}
+footer p a:hover{
     text-decoration: none;
+    color: #2978A0;
 }
-footer a:hover {
-    color: #E1E6E1;
+#hero-img {
+    width: 100%;
+  
+}
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+#hero-box{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
 }
 .logo {
     width: 80px;
 }
-.icon {
-    width: 80px;
-    padding-top: 10px;
+.msg h2 {
+    font-family: "EB Garamond";
 }
-footer p {
-    font-size: 1.2em;
-}
-footer p a:hover {
-    text-decoration: underline;
-}
-.home-grid {
-    font-family: "Cormorant Garamond", Helvetica, sans-serif;
 
+.home-title {
+    font-family: Slabo;
+    font-size: 2em;
+    margin-top: 10px;
+    color: #DA7635;
+}
+.msg p {
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+h2 {
+    margin:0;
 }
 #logo_link {
     padding-top: 5px;
+    justify-self: center;
+    align-self: center;
 }
-footer .social img {
+
+.icon {
+    padding-top: 10px;
+}
+footer.social img {
     padding-top: 15px;
 }
 .rivers-card, .camping-card, .rapids-card {
     margin: 200px 0;
 }
-.card-img{
-    border: 10px solid #DA7635;
+.card-img {
+    border: 10px solid black;
+    box-shadow: 5px 5px 10px black;
+}
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
 }
 main section img{
     box-sizing: border-box;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+.rivers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: repeat(3, auto); /* Three rows with automatic height */
+    grid-gap: 20px; /* Gap between grid items */
+}
+#intro-rivers,#intro-snake,#intro-teton {
+  order: 1; /* Set the order to 1 for left column items */
+}
+#r-intro,#s-intro,#t-intro {
+  order: 2; /* Set the order to 2 for right column items */
+}
+#intro-rivers,#intro-snake,#intro-teton,#r-intro,#s-intro,#t-intro {
+  width: 100%; /* Set the width of the items to 100% */
+}
+.card-img, .mountains {
+    width: 100%;
+}
+.rivers-card {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.camping-card {
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+.rapids-card {
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+.mountains {
+    grid-column: 2/7;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px black;
+}
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #697A21;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
 }
