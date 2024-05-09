@@ -53,6 +53,13 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
 }
+/* Added to make temple links visible. */
+.box a {
+    color: whitesmoke;
+}
+.box a:hover {
+    color: blue;
+}
 /* Class Selectors */
 .box {
     margin: 1rem;
@@ -60,11 +67,4 @@ footer {
     padding: 1rem;
     background-color: crimson;
     color: whitesmoke;
-}
-/* Added to make temple links visible. */
-.box a {
-    color: whitesmoke;
-}
-.box a:hover {
-    color: blue;
 }
