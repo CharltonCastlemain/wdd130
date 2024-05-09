@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 nav {
     background-color: steelblue;
     padding: 10px;
@@ -24,24 +29,42 @@ main {
     max-width: 840px;
 }
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0,0,0,0.2);
-    padding: 1rem;
-    background-color: crimson;
-    color: whitesmoke;
+    width: 20em;
     text-align: center;
+    position: relative;
 }
 aside img {
     width: 200px;
     height: auto;
 }
+aside h2 {
+    position: absolute;
+    top: 40px;
+    left: 170px;
+    color: black;
+}
 main img {
     width: 150px;
     height: auto;
+    float: right;
 }
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 1rem;
+    background-color: crimson;
+    color: whitesmoke;
+}
+/* Added to make temple links visible. */
+.box a {
+    color: whitesmoke;
+}
+.box a:hover {
+    color: blue;
 }
