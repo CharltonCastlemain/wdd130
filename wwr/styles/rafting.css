@@ -29,6 +29,7 @@ header {
 p {
     padding: 25px;
     color: var(--secondary-color);
+    font-family: var(--paragraph-font);
 }
 nav {
     background-color: var(--nav-background-color);
@@ -76,6 +77,7 @@ nav a:hover {
     background-color: rgba(37, 50, 55, .35);
     padding-top: 35px;
     size: .75em;
+    color: var(--accent1-color);
 }
 footer img {
     width: 50px;
