@@ -76,7 +76,6 @@ nav a:hover {
 .hero p{
     background-color: rgba(37, 50, 55, .35);
     padding-top: 35px;
-    size: .75em;
     color: var(--accent1-color);
 }
 footer img {
