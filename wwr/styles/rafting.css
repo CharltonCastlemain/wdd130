@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Sedan+SC&display=swap');
+:root {
+    --primary-color: #697A21;
+    --secondary-color: #253237;
+    --accent1-color: #DA7635;
+    --accent2-color: #2978A0;
+
+    --heading-font: 'Sedan SC', serif;
+    --paragraph-font: Raleway, serif;
+ 
+    --nav-background-color:var(--accent1-color);
+    --nav-link-color:var(--accent2-color);
+    --nav-hover-link-color:#E1E6E1;
+    --nav-hover-background-color:#253237;
+
+}
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+header {
+    background-color: var(--accent1-color);
+}
+p {
+    padding: 25px;
+    color: var(--secondary-color);
+}
+nav {
+    background-color: var(--nav-background-color);
+    font-size: .8rem;
+    display: flex;
+}
+nav a {
+    display: block;
+    text-decoration: none;
+}
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+.hero {
+    position: relative;
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.hero h1 {
+    position: absolute;
+    text-align: center;
+    top: 0%;
+    width: 100%;
+    color: var(--nav-hover-link-color);
+    background-color: rgba(37, 50, 55, 0.35);
+}
+.hero article {
+    position: absolute;
+    top: 25%;
+
+}
+.hero article img {
+    width: 250px;
+    float: right;
+    bottom: 50%;
+}
+.hero p{
+    background-color: rgba(37, 50, 55, .35);
+    padding-top: 35px;
+    size: .75em;
+}
+footer img {
+    width: 50px;
+}
