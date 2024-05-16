@@ -31,7 +31,7 @@ img {
     box-shadow: 0 0 30px gray;
 }
 p {
-    padding: 0;
+    padding: .25rem;
 }
 main {
     max-width: 840px;
