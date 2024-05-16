@@ -6,14 +6,22 @@
 nav {
     background-color: steelblue;
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 nav a {
     color:white;
     display: block;
-    padding: 20px;
+    padding: .75rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+
 }
 h1 {
-    color: steelblue
+    color: steelblue;
+    border-bottom: 1px solid steelblue;
+    padding: .5rem;
 }
 img {
     width: 150px;
@@ -32,6 +40,8 @@ aside {
     width: 20em;
     text-align: center;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 aside img {
     width: 200px;
@@ -42,6 +52,7 @@ aside h2 {
     top: 40px;
     left: 170px;
     color: black;
+
 }
 main img {
     width: 150px;
@@ -62,9 +73,21 @@ footer {
 }
 /* Class Selectors */
 .box {
-    margin: 1rem;
+    margin: 1rem;  /*-- Just showing that I know why the margin wasn't flush with the paragraph. But I like it the way it is.*/
     border: 1px solid rgba(0,0,0,.1);
     padding: 1rem;
     background-color: crimson;
     color: whitesmoke;
+}
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+.grid {
+    display: grid;
+    align-items: center;
+}
+main {
+    grid-column: 2/3;
+    margin: 1rem;
 }
