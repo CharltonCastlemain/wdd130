@@ -1,0 +1,36 @@
+body, h1, form {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    width: 50%; 
+    margin: 0 auto;
+}
+
+form label {
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+form input[type="text"],
+form textarea,
+form select,
+form input[type="number"] {
+    width: 100%; 
+    box-sizing: border-box; 
+    margin-bottom: 20px; 
+}
+
+form input[type="submit"] {
+    width: auto; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    background-color: #384012;
+    color: white;
+}
+
+h1 {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
