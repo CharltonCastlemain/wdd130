@@ -156,6 +156,9 @@ footer img {
     align-items: center;
     text-align: center;
 }
+.profiles img {
+    max-width: 200px;
+}
 .emp1,
 .emp2,
 .emp3 {
@@ -194,8 +197,8 @@ footer img {
 }
 .infoH .info {
     padding-top: 20px;
-    display: flex; /* Use flexbox */
-    align-items: center; /* Vertically center items */
+    display: flex; 
+    align-items: center; 
 }
 
 iframe {
@@ -208,25 +211,32 @@ iframe {
     padding-left: 0%;
 }
 .contact form {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
 }
 
-.contact label,
-.contact input,
-.contact textarea,
-.contact input[type="checkbox"] {
-    width: 100%;
+.contact label {
+    text-align: right;
+    margin-right: 10px;
+}
+
+#inquiry, #name, #email, #reservation, #suggestion {
+    width: 25%;
     box-sizing: border-box;
-    margin-bottom: 10px; /* Optional: Add margin between form elements */
-}
-.contact label[for="newsletter"] {
-    text-align: center;
-    width: auto; /* Reset width to auto */
-    margin: 0 auto; /* Center the label */
-}
-.contact input[type="submit"] {
-    width: 150px; /* Adjust the width as needed */
 }
 
+.contact form button, #newsletter {
+    grid-column: span 2;
+    justify-self: center;
+    margin-bottom: 35px;
+}
+#headline {
+    text-align: center;
+}
+#newstext {
+    text-align: center;
+    display: block;
+    margin: 0 auto; 
+    width:auto; 
+}
