@@ -138,13 +138,26 @@ iframe {
     margin-left: 0px;
     padding-left: 0%;
 }
-form {
-    max-width: 500px; /* Adjust the width as needed */
+.contact form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-/* Optional: Adjust the label width */
-form label {
-    width: 120px; /* Adjust the width as needed */
-    display: inline-block;
+.contact label,
+.contact input,
+.contact textarea,
+.contact input[type="checkbox"] {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px; /* Optional: Add margin between form elements */
+}
+.contact label[for="newsletter"] {
+    text-align: center;
+    width: auto; /* Reset width to auto */
+    margin: 0 auto; /* Center the label */
+}
+.contact input[type="submit"] {
+    width: 150px; /* Adjust the width as needed */
 }
 
