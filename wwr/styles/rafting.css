@@ -264,10 +264,12 @@ iframe {
 
 .trip h3 {
     text-align: center;
+    color: var(--accent1-color);
 }
 
 .trip p {
     text-align: justify;
+    color: var(--accent1-color);
 }
 
 .trip-table {
@@ -309,17 +311,6 @@ iframe {
     height: auto;
 }
 
-.hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 36px;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-/* Add styles for the newsletter section */
 .newsletter {
     text-align: center;
     margin-bottom: 40px;
@@ -362,7 +353,6 @@ iframe {
     background-color: var(--accent2-color);
 }
 
-/* Add styles for the call to action section */
 .call-to-action {
     text-align: center;
     margin-bottom: 40px;
@@ -385,31 +375,32 @@ iframe {
     background-color: var(--accent2-color);
 }
 
-/* Add styles for the grid layout */
-.grid-layout {
+.offer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    padding-bottom: 20px;
 }
 
-.grid-item {
+.offer-item {
     padding: 20px;
     background-color: var(--accent1-color);
     color: var(--secondary-color);
     border-radius: 5px;
 }
 
-.grid-item img {
+.offer-item img {
     width: 100%;
     height: auto;
     border-radius: 5px;
 }
 
-.grid-item h3 {
+.offer-item h3 {
     margin-top: 20px;
+    text-align: center;
 }
 
-.grid-item p {
+.offer-item p {
     margin-bottom: 20px;
 }
 .trip-description {
@@ -421,45 +412,15 @@ iframe {
 
 .trip-description h3:nth-of-type(1) {
     grid-row: 1;
-    grid-column: 1 / span 2;
+}
+h2 {
+    text-align: center;
 }
 
-.trip-description img:nth-of-type(1) {
-    grid-row: 2;
-    grid-column: 1;
-}
 
-.trip-description p:nth-of-type(2) {
-    grid-row: 2;
-    grid-column: 2;
-}
 
-.trip-description h3:nth-of-type(2) {
-    grid-row: 3;
-    grid-column: 1 / span 2;
-}
 
-.trip-description img:nth-of-type(2) {
-    grid-row: 4;
-    grid-column: 2;
-}
 
-.trip-description p:nth-of-type(3) {
-    grid-row: 4;
-    grid-column: 1;
-}
 
-.trip-description h3:nth-of-type(3) {
-    grid-row: 5;
-    grid-column: 1 / span 2;
-}
 
-.trip-description img:nth-of-type(3) {
-    grid-row: 6;
-    grid-column: 2;
-}
 
-.trip-description p:nth-of-type(4) {
-    grid-row: 6;
-    grid-column: 1;
-}
